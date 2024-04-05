@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bt10</title>
+    <style>
+      th,
+      tr,
+      td {
+        padding: 3vh;
+      }
+      tbody tr:nth-child(2n + 1) {
+        background-color: #d1cfcf;
+      }
+      th {
+        background-color: rgb(153, 149, 149);
+      }
+      table {
+        margin-top: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My Projects</h2>
+    <div class="input">
+      <input
+        class="display"
+        type="text"
+        placeholder="project name"
+        id="project_name"
+      />
+      <input class="display" type="text" placeholder="img url" id="img_url" />
+      <input class="display" type="text" placeholder="link" id="link" />
+      <input class="display" type="text" placeholder="tag" id="tag" />
+      <button
+        style="background-color: rgb(67, 192, 234); width: 100px; height: 50px"
+        class="display"
+        id="newProject"
+      >
+        + New Project
+      </button>
+    </div>
+    <table border="1" id="projectTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Project Name</th>
+          <th>Image URL</th>
+          <th>Link</th>
+          <th>Tags</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+    </table>
+    <script src="/ss04/bt10.js"></script>
+  </body>
+</html>

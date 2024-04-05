@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = [];
+      function sum(arr) {
+        for (const i of arr) {
+          if (arr[i] % 2 == 0) {
+            x.push(arr[i]);
+          }
+        }
+        return x;
+      }
+      sum([1, 2, 3, 4, 5, 6]);
+      let tong = x.reduce((sogoc, sosau) => {
+        return sogoc + sosau;
+      });
+      console.log(tong);
+    </script>
+  </body>
+</html>
